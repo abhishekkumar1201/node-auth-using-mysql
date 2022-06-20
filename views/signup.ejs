@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Node Auth || Sign Up</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .heading{
+            font-weight:bold;
+            text-decoration:underline;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="heading">Sign Up Form</h2>
+                </div>
+                <div class="col-md-6">
+                    <a href="login" class="btn btn-primary btn-lg" style="float:right;">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <form method="POST" action="/signup" autocomplete="off">
+                <div class="form-group">
+                    <label><b>User Name :</b></label>
+                    <input type="text" name="name" class="form-control" style="border:2px solid green;" placeholder="Enter Name Here" required />
+                </div>
+                <div class="form-group">
+                    <label><b>User Email :</b></label>
+                    <input type="email" name="email" class="form-control" style="border:2px solid green;"  placeholder="Enter Email Here" required />
+                </div>
+                <div class="form-group">
+                    <label><b>User Password :</b></label>
+                    <input type="password" name="password" class="form-control" style="border:2px solid green;"  placeholder="Enter Password Here" required />
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="insert" value="Sign Up" class="btn btn-success btn-lg">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

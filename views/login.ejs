@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Node Auth || Login</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .heading{
+                font-weight:bold;
+                text-decoration:underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="heading">Login Form</h2>
+                </div>
+                <div class="col-md-6">
+                    <a href="/" class="btn btn-primary" style="float:right;">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <form method="POST" action="/login" autocomplete="off">
+                <div class="form-group">
+                    <label><b>User Email :</b></label>
+                    <input type="email" name="email" class="form-control" style="border:2px solid green;"  placeholder="Enter Email Here" required>
+                </div>
+                <div class="form-group">
+                    <label><b>User Password :</b></label>
+                    <input type="password" name="password" class="form-control" style="border:2px solid green;"  placeholder="Enter Password Here" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="login" value="Login" class="btn btn-success">
+                </div>
+                <div style="color:red;font-weight:bold;"><%= invalidcre %></div>
+            </form>
+        </div>
+    </body>
+</html>
